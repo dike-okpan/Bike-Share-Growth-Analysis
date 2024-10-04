@@ -72,3 +72,78 @@ And here is a tabular representation of schema for our cleaned dataset:
 | Cost_of_Goods | Float | NO |
 | Revenue | float | NO |
 | Profit | float | NO |
+
+Data Cleaning Steps:
+
+1. Changed the data type of "riders" column from text to whole number.
+2. Changed data type of "date" column from text to date, but it returned over 1,000,000 rows of errors. I fixed it by setting the date column format as "mm-dd-yyyy".
+3. Checked for duplicate records. The duplicates in columns like "date", "rider_type" were excepted were perfectly fine for the analysis.
+4. Checked for null values.
+5. Created a Revenue column by calculating "riders * price".
+6. Created a "Profit" column by calculating  "revenue - (Cost_of_goods * riders)".
+7. Removed unnecessary columns by only selecting the ones I need and renamed columns using aliases.
+
+
+# Executive Summary
+
+### Overview of Findings
+
+Toman Bike Share had a fantastic 2022, and numbers show that another price increase could work if we keep delivering good value to our riders. Instead of a 25% price increase for 2023, I suggest a 10% increase first to see how customers respond, and adjust if needed.
+
+# Analysis 
+
+## Findings
+
+- What did we find?
+
+For this analysis, we're going to focus on the key performance metrics below to get the information we need for our company -
+
+Here are the key performance metrics:
+
+1. Year-over-Year Growth (2021 vs. 2022).
+2. Monthly Trends (2021 vs. 2022).
+3. Quarterly Revenue Comparison.
+4. Revenue by Rider Type.
+5. Revenue by Day.
+
+
+### 1. Year-over-Year Growth (2021 vs. 2022):
+
+
+Total Riders increased from 1,243,103 in 2021 to 2,049,576 in 2022, indicating a significant rise of approximately 65%.
+Total Revenue grew from $4,959,981 to $10,227,384, a 106% increase, suggesting strong financial performance.
+Total Profit increased from $3,418,533 to $7,030,046, showing an approximate 106% growth in profit.
+
+| Year | Riders          | Revenue         |   Profit  |
+|------|-----------------|-----------------|-----------|
+| 2021 | 1,243,103       | $4,959,981      | 3,418,533 |
+| 2022 | 2,049,576       | $10,227,384     | 7,030,046 |
+
+
+
+### 2. Monthly Trends (2021 vs. 2022):
+
+
+
+### 3. Quarterly Revenue Comparison (2021 vs 2022):
+
+
+
+### 4. Revenue by Rider Type:
+
+
+
+### 5. Revenue by Day
+
+
+
+
+
+
+
+
+
+
+
+
+
