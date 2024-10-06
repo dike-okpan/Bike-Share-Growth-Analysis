@@ -107,7 +107,7 @@ Here are the key performance metrics:
 5. Revenue by Day.
 
 
-### 1. Year-over-Year Growth (2021 vs. 2022):
+### 1. Year-over-Year Growth (2021 vs. 2022)
 
 Total Riders increased from 1,243,103 in 2021 to 2,049,576 in 2022, indicating a significant rise of approximately 65%.
 Total Revenue grew from $4,959,981 to $10,227,384, a 106% increase, suggesting strong financial performance.
@@ -120,7 +120,7 @@ Total Profit increased from $3,418,533 to $7,030,046, showing an approximate 106
 
 
 
-### 2. Monthly Trends (2021 vs. 2022):
+### 2. Monthly Trends (2021 vs. 2022)
 
 In 2022, riders and revenue saw consistent increases compared to 2021. Monthly revenue in 2022 was, on average, nearly double that of 2021.
 Notably, July-September 2022 showed peak performance, with each month generating more than $900,000 in revenue.
@@ -160,15 +160,81 @@ Notably, July-September 2022 showed peak performance, with each month generating
 | December   | 129,585    | $646,629.15     | $444,476.55  |
 
 
-### 3. Quarterly Revenue Comparison (2021 vs 2022):
+### 3. Quarterly Revenue Comparison (2021 vs 2022)
+
+Q1 (2021 vs. 2022): Revenue increased from $870,629.97 to $2,166,847.62 (approximately 149% growth).
+Q2 (2021 vs. 2022): Revenue increased from $1,434,871.83 to $2,744,480.04 (approximately 91% growth).
+Q3 (2021 vs. 2022): Revenue increased from $1,452,316.11 to $2,968,730.64 (approximately 104% growth).
+Q4 (2021 vs. 2022): Revenue increased from $1,202,163.06 to $2,347,325.94 (approximately 95% growth).
+
+**2021**
+
+| Quarter     | Revenue        |
+|-------------|--------------- |
+| 1st Quarter | $870,629.97    |
+| 2nd Quarter | $1,434,871.83  | 
+| 3rd Quarter | $1,452,316.11  | 
+| 4th Quarter | $1,202,163.06  | 
+
+**2022**
+
+| Quarter     | Revenue        |
+|-------------|--------------- |
+| 1st Quarter | $2,166,847.62  |
+| 2nd Quarter | $2,744,480.04  | 
+| 3rd Quarter | $2,968,730.64  | 
+| 4th Quarter | $2,347,325.94  | 
+
+### 4. Revenue by Day
+
+Tuesday, Wednesday and Monday had the highest revenue days, with over $2.2 million each.
+Friday had the lowest revenue ($2,093,093.35).
+
+| Day       | Revenue          |
+|-----------|------------------|
+| Sunday    | $2,111,165.26    |
+| Monday    | $2,220,853.05    |
+| Tuesday   | $2,242,634.78    |
+| Wednesday | $2,223,975.69    |
+| Thursday  | $2,180,564.75    |
+| Friday    | $2,093,093.35    |
+| Saturday  | $2,115,078.33    |
+
+### 5. Revenue by Rider Type
+
+Registered Riders generated $12,340,732, which accounted for the majority of total revenue (about 81%).
+Casual Riders generated $2,846,633, accounting for 19% of total revenue.
+
+| Rider Type        | Revenue      |
+|-------------------|--------------|
+| Casual Riders     | $2,846,633   |
+| Registered Riders | $12,340,732  | 
+
+## Insights Deep Dive
+
+Based on the findings above, between 2021 and 2022, Toman Bike Share saw significant growth. It is important to understand what these numbers tell us in order to make smart choices for 2023. For this analysis, we'll prioritize analysing the insights that are important in helping our company make a good decision on whether to proceed with the proposed 25% increase in price. 
+
+Below are the insights that will help the company more informed decision:
+
+- Growth in Riders and Revenue
+- Consistent Monthly Growth
+- Strong Performance Every Quarter
+- Most Revenue comes from Registered Riders
+
+### Growth in Riders and Revenue
+
+
+### Consistent Monthly Growth
+
+
+### Strong Performance Every Quarter
+
+
+### Most Revenue comes from Registered Riders
 
 
 
-### 4. Revenue by Rider Type:
 
-
-
-### 5. Revenue by Day
 
 
 
