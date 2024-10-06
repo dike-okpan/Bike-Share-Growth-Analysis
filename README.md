@@ -254,7 +254,7 @@ However, considering the significant contribution from registered riders, keepin
 
 ### Action Plan
 
-- Now, what steps do we take to implement the recommended decisions effectively?
+Now, what steps do we take to implement the recommended decisions effectively?
 
 1) Proceed with a 10% price increase.
 2) Launch a loyalty program to reward registered riders.
