@@ -1,4 +1,4 @@
-# Bike-Share
+# Tomen Bike Share
 
 # Objective
 
@@ -223,14 +223,50 @@ Below are the insights that will help the company more informed decision:
 
 ### Growth in Riders and Revenue
 
+In 2021, about 1.2 million people used our bikes. Fast forward to 2022, and that number jumped to 2 million, which is a 65% increase.
+This also meant more money coming in. Our revenue more than doubled, going from $5 million in 2021 to $10 million in 2022. And since we kept our costs under control, our profits also grew by 106%, from $3.4 million to $7 million.
 
 ### Consistent Monthly Growth
 
+If we look at how we performed month by month, we see a steady rise throughout the year. For example, in July, August, and September of 2022, we made over $900,000 each month; more than double the revenue from the same months in 2021.
 
 ### Strong Performance Every Quarter
 
+Breaking it down by quarters (three-month periods), the numbers tell a clear story:
 
-### Most Revenue comes from Registered Riders
+- In the first quarter (January to March) of 2022, we made $2.1 million, which is almost 150% more than the same time in 2021.
+- Every quarter of 2022 showed growth of around 90% to 104% compared to the previous year.
+
+### Most Revenue come from Registered Riders
+
+Our registered riders were the biggest contributors, bringing in $12.3 million, which is about 81% of our total revenue in 2022. Casual riders brought in $2.8 million (19%).
+This tells us that while casual riders are important, the real backbone of our business is our loyal or registered customers.
+
+
+# Recommendations
+
+What does this mean for 2023?
+
+In 2022, we raised the price of bikes by 25%, but surprisingly, the number of riders increased by 65%. This tells us that customers were still interested even with the higher prices. Our data shows that the demand for our service is high, and a price increase didn’t slow us down. This suggests that people are willing to accept a further price increase.
+For 2023, we would recommend that we try a smaller price increase of 10% instead of another 25% to see how customers respond. This will help us understand how sensitive they are to changes in price and allow us to adjust if needed.
+
+However, considering the significant contribution from registered riders, keeping our loyal consumers happy by offering discounts or other promotions should be a top priority. This might be key to maintaining this segment, particularly with the anticipated price increase.
+
+### Action Plan
+
+- Now, what steps do we take to implement the recommended decisions effectively?
+
+1) Proceed with a 10% price increase.
+2) Launch a loyalty program to reward registered riders.
+3) Run a marketing campaign aimed at casual riders to increase usage and convert them to registered riders.
+4) Monitor customer satisfaction and the impact of the price increase monthly to adjust if needed.
+5) Introduce promotional offers on Fridays and weekends to boost revenue for our low-performance days.
+
+### Further Analysis
+
+To make sure we fully understand this trend, we should also look into why we still had high demand despite the price jump, by conducting further research based on customer satisfaction; and also explore if we're in a competitive or monopolistic market.
+
+
 
 
 
