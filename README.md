@@ -268,6 +268,83 @@ Now, what steps do we take to implement the recommended decisions effectively?
 
 To make sure we fully understand this trend, we should also look into why we still had high demand despite the price jump, by conducting further research based on customer satisfaction; and also explore if we're in a competitive or monopolistic market.
 
+# Queries
+
+## SQL Queries
+
+### DATA MERGING AND TRANSFORMATION
+
+```sql
+/*
+1. Union the 2021 table and 2022 table
+2. Create a CTE
+3. Left join with Cost Table
+*/
+
+create view view_bike_sharing as
+
+with cte as
+	(select *
+	from bike_share_01
+	union
+	select *
+	from bike_share_02)
+
+select Date,
+	rider_type as Rider_Type,
+	riders as Riders,
+	round(price,2) as Price,
+	round(COGS,2) as Cost_of_Goods,
+	round(riders * price,2) as Revenue,
+	round((riders * price) - (COGS * riders),2) as Profit
+from cte a
+left join cost_table_01_02 b
+	on a.yr = b.yr
+
+```
+
+### DATA TESTING AND QUALITY CHECKS
+
+```sql
+--- Row count test
+select count(*) as Total_Rows
+from view_bike_sharing
+
+--- Column count test
+select count(*) as Total_Columns
+from INFORMATION_SCHEMA.COLUMNS
+where TABLE_NAME = 'view_bike_sharing'
+
+--- Data type check
+select COLUMN_NAME,
+		DATA_TYPE
+from INFORMATION_SCHEMA.COLUMNS
+where TABLE_NAME = 'view_bike_sharing'
+
+--- Duplicates check
+select *,
+	count(*) as Duplicates
+from view_bike_sharing
+group by Date, Rider_Type, Riders, Price, Cost_of_Goods, Revenue, Profit
+having count(*) > 1
+
+```
+
+### TOTAL REVENUE
+
+```sql
+select round(sum(Revenue),2) as Total_Revenue
+from view_bike_sharing
+
+```
+
+### TOTAL PROFIT
+
+```sql
+select round(sum(Profit),2) as Total_Profit
+from view_bike_sharing
+
+```
 
 
 
