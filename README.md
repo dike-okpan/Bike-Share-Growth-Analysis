@@ -279,6 +279,7 @@ To make sure we fully understand this trend, we should also look into why we sti
 1. Union the 2021 table and 2022 table
 2. Create a CTE
 3. Left join with Cost Table
+4. Create view
 */
 
 create view view_bike_sharing as
