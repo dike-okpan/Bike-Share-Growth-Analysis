@@ -48,6 +48,8 @@ The data is sourced from Kaggle (contains 3 CSV files), [see here to find it.](h
 # Data Cleaning, Structure & Testing
 The companies main database structure consists of 3 tables: Bike Share 2021 table, Bike Share 2022 table, and Cost table, with combined total of 33 columns and row count of 34,761 records.
 
+I combined 2021 table and 2022 table using a UNION, created a Common Table Expression (CTE), performed a LEFT JOIN between the CTE and Cost Table, and then created a VIEW.
+
 The data met the following criteria and constraints after cleaning:
 
 - Only relevant columns were retained.
@@ -77,7 +79,7 @@ Data Cleaning Steps:
 
 1. Changed the data type of "riders" column from text to whole number.
 2. Changed data type of "date" column from text to date, but it returned over 1,000 rows of errors. I fixed it by setting the date column format as "mm-dd-yyyy".
-3. Checked for duplicate records. The duplicates in columns like "date", "rider_type" were excepted were perfectly fine for the analysis.
+3. Checked for duplicate records. We had more than more than one ride transactions in some particular days, so the duplicates are excepted and does not indicate any issue.
 4. Checked for null values.
 5. Created a Revenue column by calculating "riders * price".
 6. Created a "Profit" column by calculating  "revenue - (Cost_of_goods * riders)".
