@@ -272,6 +272,23 @@ To make sure we fully understand this trend, we should also look into why we sti
 
 ## SQL Queries
 
+### DATA EXPLORATION
+
+```sql
+--- 2021 DATA
+select *
+from bike_share_01
+
+--- 2023 DATA
+select *
+from bike_share_02
+
+--- Cost Table
+select *
+from cost_table_01_02
+
+```
+
 ### DATA MERGING AND TRANSFORMATION
 
 ```sql
@@ -347,16 +364,97 @@ from view_bike_sharing
 
 ```
 
+### TOTAL RIDERS
 
+```sql
+select sum(riders) as Total_Riders
+from view_bike_sharing
 
+```
 
+### TOTAL REVENUE AND PROFIT BY YEAR
 
+```sql
+select YEAR(Date) as Year,
+	sum(riders) as Riders,
+	round(sum(Revenue),0) as Revenue,
+	round(sum(Profit),0) as Profit
+from view_bike_sharing
+group by YEAR(Date)
 
+```
 
+### TOTAL RIDERS, REVENUE AND PROFIT BY MONTHS FOR 2021
 
+```sql
+select datename(month,Date) as Month,
+	sum(Riders) as Riders,
+	round(sum(Revenue),2) as Revenue,
+	round(sum(Profit),2) as Profit
+from view_bike_sharing
+where year(Date) = '2021'
+group by datename(month,Date)
+order by Revenue desc
 
+```
 
+### TOTAL RIDERS, REVENUE AND PROFIT BY MONTHS FOR 2022
 
+```sql
+select datename(month,Date) as Month,
+	sum(Riders) as Riders,
+	round(sum(Revenue),2) as Revenue,
+	round(sum(Profit),2) as Profit
+from view_bike_sharing
+where year(Date) = '2022'
+group by datename(month,Date)
+order by Revenue desc
+
+```
+
+### TOTAL REVENUE BY QUARTER FOR 2021
+
+```sql
+select DATEPART(Quarter,Date) as Quarter,
+	round(sum(Revenue),2) as Revenue
+from view_bike_sharing
+where YEAR(Date) = '2021'
+group by DATEPART(Quarter,Date)
+order by Revenue desc
+
+```
+
+### TOTAL REVENUE BY QUARTER FOR 2022
+
+```sql
+select DATEPART(Quarter,Date) as Quarter,
+	round(sum(Revenue),2) as Revenue
+from view_bike_sharing
+where YEAR(Date) = '2022'
+group by DATEPART(Quarter,Date)
+order by Revenue desc
+
+```
+
+### TOTAL REVENUE BY DAYS
+
+```sql
+select datename(WEEKDAY,Date) as Days,
+	round(sum(Revenue),2) as Revenue
+from view_bike_sharing
+group by datename(WEEKDAY,Date)
+order by Revenue desc
+
+```
+### TOTAL REVENUE BY RIDER TYPE
+
+```sql
+select Rider_Type,
+	round(SUM(Revenue),0) as Revenue
+from view_bike_sharing
+group by Rider_Type
+
+```
 
 
 
