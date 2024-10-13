@@ -56,6 +56,7 @@ The data met the following criteria and constraints after cleaning:
 - All data types were appropriate for the contents of each column.
 - No column contained null values, indicating complete data for all records.
 
+After Data Merging, Transformation and selecting relevent columns for the analysis, we have 34,758 rows and 7 columns. 
 Below is a table outlining the constraints on our cleaned dataset:
 
 | Property | Description |
