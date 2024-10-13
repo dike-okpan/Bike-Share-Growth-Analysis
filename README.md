@@ -99,7 +99,7 @@ Toman Bike Share had a fantastic 2022, and numbers show that another price incre
 
 - What did we find?
 
-For this analysis, we're going to focus on the key performance metrics below to get the information we need for our company -
+For this analysis, we're going to focus on the key performance metrics below to get the information we need for our company.
 
 Here are the key performance metrics:
 
