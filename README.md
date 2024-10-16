@@ -457,8 +457,42 @@ group by Rider_Type
 
 ```
 
+## POWER BI DAX
 
+### DATE TABLE
 
+```sql
+
+-- calender table
+Date Table = CALENDAR(MIN(Query1[Date]), MAX(Query1[Date]))
+
+-- Year
+Year = YEAR('Date Table'[Date]) 
+
+-- Quarter
+Quarter = "Q" & QUARTER('Date Table'[Date])
+
+-- Month
+Month = FORMAT('Date Table'[Date], "mmm") 
+
+-- Month Number
+Month Number = MONTH('Date Table'[Date])
+
+-- Day of Week
+Day of Week = FORMAT('Date Table'[Date], "dddd") 
+
+-- Day of Week Number
+DayofWeek Number = WEEKDAY('Date Table'[Date], 1) 
+
+```
+
+### PROFIT MARGIN
+
+```sql
+
+Profit_Margin = (sum(Query1[revenue]) - sum(Query1[Profit])) / sum(Query1[Revenue])
+
+```
 
 
 
