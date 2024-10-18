@@ -1,5 +1,24 @@
 # Tomen Bike Share: Navigating Growth and Strategic Pricing
 
+# Table of contents 
+
+- [Objective](#objective)
+	- [User story](user-story)
+- [Data source](#data-source)
+	- [Tools](#tools)
+- [Data Cleaning, Structure and Testing](#data-cleaning-structure-and-testing)
+- [Executive Summary](#executive-summary)
+	- [Overview of Findings](#overview-of-findings)
+- [Analysis](#analysis)
+	- [Findings](#findings)
+	- [Insights Deep Dive](#insights-deep-dive)
+- [Recommendations](#recommendations)
+	- [Action Plan](#action-plan)
+	- [Further Analysis](#further-analysis)
+- [Queries](#queries)
+	- [SQL Queries](#sql-queries)
+	- [Power BI DAX](#power-bi-dax)    
+
 # Objective
 
 The objective of this project is to analyze and create a dashboard for Toman Bike Share that highlights key performance metrics to support informed decision-making on a potential 25% increase in bike shares for 2023.
@@ -45,7 +64,7 @@ The data is sourced from Kaggle (contains 3 CSV files), [see here to find it.](h
 | Power BI | Visualizing the data via interactive dashboards |
 | GitHub | Hosting the project documentation and version control |
 
-# Data Cleaning, Structure & Testing
+# Data Cleaning, Structure and Testing
 The companies main database structure consists of 3 tables: Bike Share 2021 table, Bike Share 2022 table, and Cost table, with combined total of 33 columns and row count of 34,761 records.
 
 I combined 2021 table and 2022 table using a UNION, created a Common Table Expression (CTE), performed a LEFT JOIN between the CTE and Cost Table, and then created a VIEW.
@@ -457,7 +476,7 @@ group by Rider_Type
 
 ```
 
-## POWER BI DAX
+## Power BI DAX
 
 ### DATE TABLE
 
