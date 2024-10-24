@@ -112,6 +112,8 @@ Data Cleaning Steps:
 
 Toman Bike Share had a fantastic 2022, and numbers show that another price increase could work if we keep delivering good value to our riders. Instead of a 25% price increase for 2023, I suggest a 10% increase first to see how customers respond, and adjust if needed.
 
+![dashboard](https://github.com/dike-okpan/Bike-Share/blob/0737624842839403e8e5dc8546d6f3ad8ff09169/bike_share_dash.jpg)
+
 # Analysis 
 
 ## Findings
